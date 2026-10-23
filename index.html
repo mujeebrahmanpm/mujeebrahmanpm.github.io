@@ -166,6 +166,18 @@ h2 {
 }
 .media .hint { font-size: 0.8125rem; color: var(--fg-dim); max-width: 24rem }
 .media img, .media iframe { width: 100%; height: 100%; border: 0; display: block }
+.media.wide { aspect-ratio: 32 / 9; padding: 0 }
+.media img { object-fit: cover }
+
+.caption {
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  color: var(--fg-faint);
+  padding: 0.6rem 1.75rem 0;
+  margin: 0;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.6rem;
+}
 
 .body { padding: 1.75rem }
 
@@ -318,9 +330,9 @@ a:focus-visible, button:focus-visible {
 
   <ul class="contact">
     <li><span>email</span> <a href="mailto:mujeebmjrahman@gmail.com">mujeebmjrahman@gmail.com</a></li>
-    <li><span>phone</span> <span class="todo">+91 9526553432</span></li>
+    <li><span>phone</span> <span class="todo">+91 ...</span></li>
     <li><span>linkedin</span> <a href="https://linkedin.com/in/mujeeb-rahman-31798112b">/mujeeb-rahman</a></li>
-    <li><span>github</span> <a href="https://github.com/mujeeb11503051/"><span class="todo">github.com/...</span></a></li>
+    <li><span>github</span> <a href="https://github.com/"><span class="todo">github.com/...</span></a></li>
     <li><span>cv</span> <a href="Mujeeb_Rahman_CV.pdf">download PDF</a></li>
   </ul>
 </header>
@@ -559,10 +571,10 @@ a:focus-visible, button:focus-visible {
 
     <!-- ============ PROJECT 4 ============ -->
     <article class="project">
-      <div class="media">
-        <p class="mono">[ VIDEO OR STILL — 16:9 ]</p>
-        <p class="hint">A headset-view capture of the point cloud building up as you walk is the shot here.</p>
+      <div class="media wide">
+        <img src="Thesis.jpg" alt="An office room photographed normally on the left; on the right, the same view with the live LiDAR point cloud rendered in green, registered to the room.">
       </div>
+      <p class="caption">Left: the room. Right: the same view with the live point cloud registered over it.</p>
 
       <div class="body">
         <h3>Live LiDAR in a Headset</h3>
