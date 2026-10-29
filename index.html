@@ -382,7 +382,7 @@ a:focus-visible, button:focus-visible {
             <dt>What I built</dt>
             <dd>
               <ul class="tight">
-                <li>Segmentation of the imaging volume in 3D Slicer, exported per-structure and retopologised in Blender for real-time rendering</li>
+                <li>Mesh preparation in Blender — decimation and retopology so the geometry renders in real time on a tablet, split per structure for independent control</li>
                 <li>Layer visibility and per-layer transparency, driven from a runtime UI</li>
                 <li>Clipping plane as a shader-level world-space cut, so the cross-section stays correct as the model is moved</li>
                 <li>Marker-based placement and anchoring through AR Foundation; tested on Samsung Galaxy Tab</li>
@@ -403,18 +403,17 @@ a:focus-visible, button:focus-visible {
           <div class="field attrib">
             <dt>Assets and sources</dt>
             <dd>
-              Skull, brain and tumour geometry derived from a <span class="todo">[model name]</span>
-              model by <span class="todo">[author]</span> on Sketchfab, used under
-              <span class="todo">[licence]</span> — <span class="todo">[link]</span>.
-              Segmentation, mesh reduction, shaders, UI and all application code are mine.
+              <a href="https://sketchfab.com/3d-models/exam-3-segmentation-of-skull-brain-and-tumor-164afd6b605346d983422b19e314d8e6">“Exam 3 Segmentation of Skull, Brain, and Tumor”</a>
+              by emwigdahl, Sketchfab. Licensed under CC Attribution 4.0; modified for real-time
+              rendering. Segmented from CT and MR data in the CEREBRIX dataset.
             </dd>
           </div>
 
           <div class="field">
             <dt>Links</dt>
             <dd class="links">
-              <a href="#"><span class="todo">Source on GitHub</span></a>
-              <a href="#"><span class="todo">Video</span></a>
+              <a href="https://github.com/mujeebrahmanpm/AR-Anatomy-Viewer">Source on GitHub</a>
+              <a href="https://youtu.be/c7RZ4Ymnb2A">Video</a>
             </dd>
           </div>
         </dl>
@@ -475,8 +474,7 @@ a:focus-visible, button:focus-visible {
           <div class="field attrib">
             <dt>Assets and sources</dt>
             <dd>
-              Warehouse environment and AGV model from <span class="todo">[asset source and licence]</span>.
-              Vehicle control, networking, telemetry and latency instrumentation are mine.
+              Warehouse environment and AGV model: <span class="todo">[source, author, licence, link]</span>.
             </dd>
           </div>
 
