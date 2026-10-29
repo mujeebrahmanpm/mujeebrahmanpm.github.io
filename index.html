@@ -524,7 +524,7 @@ a:focus-visible, button:focus-visible {
             <dt>What I built</dt>
             <dd>
               <ul class="tight">
-                <li>Godot XR application subscribing to the scanner's ROS topic and feeding points in as they arrive</li>
+                <li>Godot XR application subscribing to the scanner's ROS topic and feeding points in as they arrive, rendering the result on the headset</li>
                 <li>Restructured an existing GPU octree indexer from fixed-file input to a continuous, open-ended stream, batching roughly 100k points per call</li>
                 <li>Native C++/CUDA module called across a DLL boundary: points marshalled in each frame, the frustum-culled visible set returned for rendering</li>
                 <li>Python tool reproducing the sensor's output format and timing, so development and regression testing ran without the hardware connected</li>
@@ -546,11 +546,9 @@ a:focus-visible, button:focus-visible {
           <div class="field attrib">
             <dt>Assets and sources</dt>
             <dd>
-              The GPU octree construction and point rendering kernels come from an open-source research
-              implementation by TU Wien. My contribution is the streaming restructure of the host side, the
-              Godot XR application, the ROS integration and the sensor simulator. Thesis conducted at
-              Fraunhofer IPM; <span class="todo">confirm what you may publish before posting code or
-              captures</span>.
+              GPU octree construction adapted from an open-source research implementation by TU Wien,
+              restructured for continuous streaming. Thesis conducted at Fraunhofer IPM;
+              <span class="todo">confirm what you may publish before posting code or captures</span>.
             </dd>
           </div>
 
